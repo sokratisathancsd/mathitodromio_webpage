@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Επικοινωνία</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div class="profile-pic">
+        <img src="images/mathitodromio-profile.png" alt="profile-picture">
+    </div>
+    <div class="navigation-bar">
+        <a href="index.html">
+            <button style="cursor: pointer" class="nav-buttons" href="#home">Αρχική Σελίδα</button>
+        </a>
+
+        <div class="dropdown">
+            <button class="nav-buttons">Πρόγραμμα</button>
+            <div class="dropdown-content">
+                <a href="#">Πρόγραμμα Φροντιστηρίου</a>
+                <a href="#">Μαθήματα και ώρες/εβδομάδα</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons">Φροντιστήριο</button>
+            <div class="dropdown-content">
+                <a href="frontistirio.html">Ποιοι είμαστε</a>
+                <a href="#">Επιτυχόντες</a>
+                <a href="ekdiloseis.html">Εκδηλώσεις</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons-active">Για Μαθητές</button>
+            <div class="dropdown-content">
+                <a href="usefulLinks.html">Χρήσιμοι Σύνδεσμοι</a>
+                <a href="#">Θέματα Πανελληνίων</a>
+                <a href="moria.html">Υπολογισμός Μορίων</a>
+
+            </div>
+        </div>
+        <a href="#anakoinwseis">
+            <button style="cursor: pointer;" class="nav-buttons">Ανακοινώσεις</button>
+        </a>
+
+        <a href="contact.html">
+            <button style="cursor: pointer" class="nav-buttons" href="#contact">Επικοινωνία</button>
+        </a>
+    </div>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(window).scroll(function (e) {
+            var $el = $('.navigation-bar');
+            var isPositionFixed = ($el.css('position') === 'fixed');
+            if ($(this).scrollTop() > 120 && !isPositionFixed) {
+                $el.css({'position': 'fixed', 'top': '0px', 'box-shadow': '0 8px 16px 0 rgba(0,0,0,0.8)'});
+            }
+            if ($(this).scrollTop() < 120 && isPositionFixed) {
+                $el.css({'position': 'absolute', 'top': '100px', 'box-shadow': 'none'});
+            }
+        });</script>
+
+
+    <h2>Χρήσιμοι Σύνδεσμοι</h2>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>Όνομα</th>
+                <th>Σύνδεσμος στο WEB</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="font-size: large">Υπουργείο Πολιτισμού, Παιδείας & Θρησκευμάτων</td>
+                <td style="font-size: large"><a href="http://www.minedu.gov.gr/" target="_blank" style="text-decoration: none;">http://www.minedu.gov.gr/</a></td>
+            </tr>
+            <tr>
+                <td style="font-size: large">Πύλη Επαγγελματικού Προσανατολισμού</td>
+                <td style="font-size: large"><a href="https://www.mysep.gr/" target="_blank" style="text-decoration: none;">https://www.mysep.gr/</a></td>
+            </tr>
+            <tr>
+                <td style="font-size: large">Αρχαία Λατινικά</td>
+                <td style="font-size: large"><a href="https://arxaia-latinika.gr/" target="_blank" style="text-decoration: none;">https://arxaia-latinika.gr/</a></td>
+            </tr>
+            <tr>
+                <td style="font-size: large"> Επίσημος ιστότοπος της Ευρωπαϊκής Ένωσης</td>
+                <td style="font-size: large"><a href="https://europa.eu/" target="_blank" style="text-decoration: none;">https://europa.eu/</a></td>
+            </tr>
+            <tr>
+                <td style="font-size: large">Γενική Γραμματεία Δια Βίου Μάθησης</td>
+                <td style="font-size: large"><a href="http://www.gsae.edu.gr/" target="_blank" style="text-decoration: none;">http://www.gsae.edu.gr/</a></td>
+            </tr>
+            <tr>
+                <td style="font-size: large">Γενική Γραμματεία Νέας Γενιάς</td>
+                <td style="font-size: large"><a href="http://www.neagenia.gr/" target="_blank" style="text-decoration: none;">http://www.neagenia.gr/</a></td>
+            </tr>
+            <tr>
+                <td style="font-size: large">Πανελλήνιο Σχολικό Δίκτυο</td>
+                <td style="font-size: large"><a href="http://www.sch.gr/" target="_blank" style="text-decoration: none;">http://www.sch.gr/</a></td>
+            </tr>
+            <tr>
+                <td style="font-size: large">Η Εκπαιδευτική Πύλη του Υπουργείου Πολιτισμού, Παιδείας & Θρησκευμάτων</td>
+                <td style="font-size: large"><a href="http://www.e-yliko.sch.gr/" target="_blank" style="text-decoration: none;">http://www.e-yliko.sch.gr/</a></td>
+            </tr>
+            <tr>
+                <td style="font-size: large">Διαδραστικά Σχολικά Βιβλία</td>
+                <td style="font-size: large"><a href="http://ebooks.edu.gr/" target="_blank" style="text-decoration: none;">http://ebooks.edu.gr/</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+</main>
+
+
+<footer>
+    <div class="foot">
+        <h5>Φροντιστήριο Μαθητοδρόμιο | Created by Sokratis Athanasiadis | 2020</h5>
+    </div>
+</footer>
+</body>
+</html>

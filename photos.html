@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Φροντιστήριο</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .row {
+            display: -ms-flexbox; /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE 10 */
+            flex: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<main>
+    <div class="profile-pic">
+        <img src="images/mathitodromio-profile.png" alt="profile-picture">
+    </div>
+    <div class="navigation-bar">
+        <a href="index.html">
+            <button style="cursor: pointer" class="nav-buttons">Αρχική Σελίδα</button>
+        </a>
+
+        <div class="dropdown">
+            <button class="nav-buttons">Πρόγραμμα</button>
+            <div class="dropdown-content">
+                <a href="#">Πρόγραμμα Φροντιστηρίου</a>
+                <a href="#">Μαθήματα και ώρες/εβδομάδα</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons-active">Φροντιστήριο</button>
+            <div class="dropdown-content">
+                <a href="frontistirio.html">Ποιοι είμαστε</a>
+                <a href="#">Επιτυχόντες</a>
+                <a href="photos.html">Φωτογραφίες</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons">Για Μαθητές</button>
+            <div class="dropdown-content">
+                <a href="usefulLinks.html">Χρήσιμοι Σύνδεσμοι</a>
+                <a href="#">Θέματα Πανελληνίων</a>
+                <a href="moria.html">Υπολογισμός Μορίων</a>
+            </div>
+        </div>
+        <a href="#anakoinwseis">
+            <button style="cursor: pointer;" class="nav-buttons">Ανακοινώσεις</button>
+        </a>
+
+        <a href="contact.html">
+            <button style="cursor: pointer" class="nav-buttons">Επικοινωνία</button>
+        </a>
+    </div>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(window)(function () {
+            let $el = $('.navigation-bar');
+            let isPositionFixed = ($el.css('position') === 'fixed');
+            if ($(this).scrollTop() > 120 && !isPositionFixed) {
+                $el.css({'position': 'fixed', 'top': '0px', 'box-shadow': '0 8px 16px 0 rgba(0,0,0,0.8)'});
+            }
+            if ($(this).scrollTop() < 120 && isPositionFixed) {
+                $el.css({'position': 'absolute', 'top': '100px', 'box-shadow': 'none'});
+            }
+        });</script>
+
+    <h2>Φωτογραφίες</h2>
+    <hr>
+    <div class="first">
+        <div id="var">1</div>
+        <button onclick="loadPhotos()" id="load_more" style="vertical-align:middle"><span>Περισσότερα... </span></button>
+
+        <!-- Photo Grid -->
+        <div class="row">
+            <div id="first" class="column">
+
+            </div>
+            <div id="second" class="column">
+
+            </div>
+
+            <div id="third" class="column">
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <script>
+        function loadPhotos()
+        {
+            var l = parseInt( document.getElementById("var").innerHTML);
+            var i;
+            for (i = l; i <= l+10; i++) {
+                var img = new Image();
+                if (i % 3 === 0) {
+                    img.style.width = "70%";
+                    img.src = 'images/paidia/' + i + '.jpg';
+                    document.getElementById('first').append(img);
+                }
+                if (i % 3 === 1) {
+                    img.style.width = "70%";
+                    img.src = 'images/paidia/' + i + '.jpg';
+                    document.getElementById('second').append(img);
+                }
+                if (i % 3 === 2) {
+                    img.style.width = "70%";
+                    img.src = 'images/paidia/' + i + '.jpg';
+                    document.getElementById('third').append(img);
+                }
+
+
+            }
+            document.getElementById("var").innerHTML = i;
+            var x = document.createElement("BUTTON");
+            x.onclick = function() {loadPhotos();};
+            var t = document.createTextNode("Περισσότερα...");
+            var xx = document.createElement("SPAN");
+            xx.appendChild(t);
+            x.setAttribute("id","load_more");
+            x.setAttribute("style","vertical-align:middle");
+            x.appendChild(xx);
+            document.getElementById('second').append(x);
+
+        }
+    </script>
+
+</main>
+
+
+
+</body>
+</html>

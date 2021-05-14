@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8ffaa72-5b33-45b5-8294-8a1ce5784e7a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1gJZ4lNmVLK8CUZkuPjUt14eHnx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.contact.html">
+    <configuration name="contact.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mathitodromio/contact.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mathitodromio/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.contact.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8ffaa72-5b33-45b5-8294-8a1ce5784e7a" name="Default Changelist" comment="" />
+      <created>1597834467301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597834467301</updated>
+      <workItem from="1597834468574" duration="18921000" />
+      <workItem from="1597873405186" duration="77000" />
+      <workItem from="1597915683753" duration="14379000" />
+      <workItem from="1597944845254" duration="6158000" />
+      <workItem from="1598003055542" duration="3418000" />
+      <workItem from="1598021895409" duration="4594000" />
+      <workItem from="1598029775384" duration="810000" />
+      <workItem from="1602843164564" duration="1117000" />
+      <workItem from="1602844291615" duration="3453000" />
+      <workItem from="1602868252923" duration="11311000" />
+      <workItem from="1603038962389" duration="794000" />
+      <workItem from="1603099743625" duration="1230000" />
+      <workItem from="1603105629883" duration="11093000" />
+      <workItem from="1603130226763" duration="3796000" />
+      <workItem from="1603189905406" duration="4487000" />
+      <workItem from="1603215347278" duration="603000" />
+      <workItem from="1603280013320" duration="13635000" />
+      <workItem from="1603309549964" duration="1126000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="183" key="#Inspections" timestamp="1603281335394">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="466" y="183" key="#Inspections/0.0.1680.1010@0.0.1680.1010" timestamp="1603281335394" />
+    <state width="816" height="331" key="GridCell.Tab.0.bottom" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.0.center" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.0.left" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.0.right" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.1.bottom" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.1.center" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.1.left" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.1.right" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.2.bottom" timestamp="1598026504325">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504325" />
+    <state width="816" height="331" key="GridCell.Tab.2.center" timestamp="1598026504325">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504325" />
+    <state width="816" height="331" key="GridCell.Tab.2.left" timestamp="1598026504324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504324" />
+    <state width="816" height="331" key="GridCell.Tab.2.right" timestamp="1598026504325">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="816" height="331" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1598026504325" />
+    <state x="0" y="153" key="SettingsEditor" timestamp="1597863483897">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="0" y="153" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1597863483897" />
+  </component>
+</project>

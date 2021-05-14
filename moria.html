@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Επικοινωνία</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div class="profile-pic">
+        <img src="images/mathitodromio-profile.png" alt="profile-picture">
+    </div>
+    <div class="navigation-bar">
+        <a href="index.html">
+            <button style="cursor: pointer" class="nav-buttons" href="#home">Αρχική Σελίδα</button>
+        </a>
+
+        <div class="dropdown">
+            <button class="nav-buttons">Πρόγραμμα</button>
+            <div class="dropdown-content">
+                <a href="#">Πρόγραμμα Φροντιστηρίου</a>
+                <a href="#">Μαθήματα και ώρες/εβδομάδα</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons">Φροντιστήριο</button>
+            <div class="dropdown-content">
+                <a href="frontistirio.html">Ποιοι είμαστε</a>
+                <a href="#">Επιτυχόντες</a>
+                <a href="ekdiloseis.html">Εκδηλώσεις</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons-active">Για Μαθητές</button>
+            <div class="dropdown-content">
+                <a href="usefulLinks.html">Χρήσιμοι Σύνδεσμοι</a>
+                <a href="#">Θέματα Πανελληνίων</a>
+                <a href="moria.html">Υπολογισμός Μορίων</a>
+
+            </div>
+        </div>
+        <a href="#anakoinwseis">
+            <button style="cursor: pointer;" class="nav-buttons">Ανακοινώσεις</button>
+        </a>
+
+        <a href="contact.html">
+            <button style="cursor: pointer" class="nav-buttons" href="#contact">Επικοινωνία</button>
+        </a>
+    </div>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(window).scroll(function (e) {
+            var $el = $('.navigation-bar');
+            var isPositionFixed = ($el.css('position') === 'fixed');
+            if ($(this).scrollTop() > 120 && !isPositionFixed) {
+                $el.css({'position': 'fixed', 'top': '0px', 'box-shadow': '0 8px 16px 0 rgba(0,0,0,0.8)'});
+            }
+            if ($(this).scrollTop() < 120 && isPositionFixed) {
+                $el.css({'position': 'absolute', 'top': '100px', 'box-shadow': 'none'});
+            }
+        });</script>
+
+
+    <h2>Υπολογισμός Μορίων</h2>
+    <div class="first">
+        <hr>
+
+
+        <div style="margin-top: 40px;" class="btn-group">
+            <button class="buttonSelected" id="b1" onclick="onclick1()">1ο Επιστημονικό Πεδίο<br>Ανθρωπιστικών Σπουδών</button>
+            <button class="buttonNotSelected" id="b2" onclick="onclick2()">2ο Επιστημονικό Πεδίο<br>Θετικών Σπουδών</button>
+            <button class="buttonNotSelected" id="b3" onclick="onclick3()">3ο Επιστημονικό Πεδίο<br>Σπουδών Υγείας</button>
+            <button class="buttonNotSelected" id="b4" onclick="onclick4()">4ο Επιστημονικό Πεδίο<br>Οικονομίας & Πληροφορικής</button>
+        </div>
+        <div style="display: block; margin-top: 65px; float:left;">
+            <p id="mathima1">Ν. Γλώσσα & Λογοτεχνία</p>
+            <p id="mathima2">Αρχαία Ελληνικά</p>
+            <p id="mathima3">Ιστορία</p>
+            <p id="mathima4">Κοινωνιολογία</p>
+        </div>
+        <div style="display: block; margin-top: 80px;">
+            <p><label  style="margin-left:20px;">
+                <input id="m1" style="width: 40px;" type="number" step="0.1"
+                       oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength = "4">
+            </label></p>
+            <p><label style="margin-left:20px;">
+                <input id="m2" style="width: 40px;" type="number" step="0.1"
+                       oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength = "4">
+            </label></p>
+            <p><label style="margin-left:20px;"
+                      oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      maxlength = "4">
+                <input id="m3" style="width: 40px;" type="number" step="0.1">
+            </label></p>
+            <p><label style="margin-left:20px;"
+                      oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      maxlength = "4">
+                <input id="m4" style="width: 40px;" type="number" step="0.1">
+            </label></p>
+        </div>
+        <div>
+            <button onclick="moria()" style="float:left; padding:12px 12px 12px 12px; margin-top: 40px;">Υπολογισμός
+                Μορίων
+            </button>
+            <p id="moria_">Μόρια:</p>
+        </div>
+
+
+    </div>
+
+    <script>
+        function onclick1(){
+            document.getElementById("mathima1").innerHTML= "Ν. Γλώσσα & Λογοτεχνία"
+            document.getElementById("mathima2").innerHTML= "Αρχαία Ελληνικά"
+            document.getElementById("mathima3").innerHTML= "Ιστορία"
+            document.getElementById("mathima4").innerHTML= "Κοινωνιολογία"
+
+            document.getElementById("b2").classList.remove("buttonSelected")
+            document.getElementById("b3").classList.remove("buttonSelected")
+            document.getElementById("b4").classList.remove("buttonSelected")
+            document.getElementById("b2").classList.add("buttonNotSelected")
+            document.getElementById("b3").classList.add("buttonNotSelected")
+            document.getElementById("b4").classList.add("buttonNotSelected")
+
+            document.getElementById("b1").classList.remove("buttonNotSelected")
+            document.getElementById("b1").classList.add("buttonSelected");
+        }
+        function onclick2(){
+            document.getElementById("mathima1").innerHTML= "Ν. Γλώσσα & Λογοτεχνία"
+            document.getElementById("mathima2").innerHTML= "Φυσική"
+            document.getElementById("mathima3").innerHTML= "Χημεία"
+            document.getElementById("mathima4").innerHTML= "Μαθηματικά"
+
+            document.getElementById("b1").classList.remove("buttonSelected")
+            document.getElementById("b3").classList.remove("buttonSelected")
+            document.getElementById("b4").classList.remove("buttonSelected")
+            document.getElementById("b1").classList.add("buttonNotSelected")
+            document.getElementById("b3").classList.add("buttonNotSelected")
+            document.getElementById("b4").classList.add("buttonNotSelected")
+
+            document.getElementById("b2").classList.remove("buttonNotSelected")
+            document.getElementById("b2").classList.add("buttonSelected");
+        }
+        function onclick3(){
+            document.getElementById("mathima1").innerHTML= "Ν. Γλώσσα & Λογοτεχνία"
+            document.getElementById("mathima2").innerHTML= "Φυσική"
+            document.getElementById("mathima3").innerHTML= "Χημεία"
+            document.getElementById("mathima4").innerHTML= "Βιολογία"
+
+            document.getElementById("b1").classList.remove("buttonSelected")
+            document.getElementById("b2").classList.remove("buttonSelected")
+            document.getElementById("b4").classList.remove("buttonSelected")
+            document.getElementById("b1").classList.add("buttonNotSelected")
+            document.getElementById("b2").classList.add("buttonNotSelected")
+            document.getElementById("b4").classList.add("buttonNotSelected")
+
+            document.getElementById("b3").classList.remove("buttonNotSelected")
+            document.getElementById("b3").classList.add("buttonSelected");
+        }
+        function onclick4(){
+            document.getElementById("mathima1").innerHTML= "Ν. Γλώσσα & Λογοτεχνία"
+            document.getElementById("mathima2").innerHTML= "Μαθηματικά"
+            document.getElementById("mathima3").innerHTML= "Πληροφορική"
+            document.getElementById("mathima4").innerHTML= "Οικονομικά"
+
+            document.getElementById("b1").classList.remove("buttonSelected")
+            document.getElementById("b2").classList.remove("buttonSelected")
+            document.getElementById("b3").classList.remove("buttonSelected")
+            document.getElementById("b1").classList.add("buttonNotSelected")
+            document.getElementById("b2").classList.add("buttonNotSelected")
+            document.getElementById("b3").classList.add("buttonNotSelected")
+
+            document.getElementById("b4").classList.remove("buttonNotSelected")
+            document.getElementById("b4").classList.add("buttonSelected");
+        }
+        function moria() {
+            var m1 = parseFloat(document.getElementById("m1").value);
+            var m2 = parseFloat(document.getElementById("m2").value);
+            var m3 = parseFloat(document.getElementById("m3").value);
+            var m4 = parseFloat(document.getElementById("m4").value);
+            var moria=0;
+            moria = (m1 + m2 + m3 + m4) / 4;
+            document.getElementById("moria_").innerHTML = "Μόρια: "+moria*1000;
+        }
+    </script>
+</main>
+
+
+<footer>
+    <div class="foot">
+        <h5>Φροντιστήριο Μαθητοδρόμιο | Created by Sokratis Athanasiadis | 2020</h5>
+    </div>
+</footer>
+</body>
+</html>

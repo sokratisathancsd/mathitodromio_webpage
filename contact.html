@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Επικοινωνία</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div class="profile-pic">
+        <img src="images/mathitodromio-profile.png" alt="profile-picture">
+    </div>
+    <div class="navigation-bar">
+        <a href="index.html">
+            <button style="cursor: pointer" class="nav-buttons">Αρχική Σελίδα</button>
+        </a>
+
+        <div class="dropdown">
+            <button class="nav-buttons">Πρόγραμμα</button>
+            <div class="dropdown-content">
+                <a href="#">Πρόγραμμα Φροντιστηρίου</a>
+                <a href="#">Μαθήματα και ώρες/εβδομάδα</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons">Φροντιστήριο</button>
+            <div class="dropdown-content">
+                <a href="frontistirio.html">Ποιοι είμαστε</a>
+                <a href="#">Επιτυχόντες</a>
+                <a href="ekdiloseis.html">Εκδηλώσεις</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons">Για Μαθητές</button>
+            <div class="dropdown-content">
+                <a href="usefulLinks.html">Χρήσιμοι Σύνδεσμοι</a>
+                <a href="#">Θέματα Πανελληνίων</a>
+                <a href="moria.html">Υπολογισμός Μορίων</a>
+            </div>
+        </div>
+        <a href="#anakoinwseis">
+            <button style="cursor: pointer;" class="nav-buttons">Ανακοινώσεις</button>
+        </a>
+
+        <a href="contact.html">
+            <button style="cursor: pointer" class="nav-buttons-active">Επικοινωνία</button>
+        </a>
+    </div>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(window).on("scroll",function () {
+            let $el = $('.navigation-bar');
+            let isPositionFixed = ($el.css('position') === 'fixed');
+            if ($(this).scrollTop() > 120 && !isPositionFixed) {
+                $el.css({'position': 'fixed', 'top': '0px', 'box-shadow': '0 8px 16px 0 rgba(0,0,0,0.8)'});
+            }
+            if ($(this).scrollTop() < 120 && isPositionFixed) {
+                $el.css({'position': 'absolute', 'top': '100px', 'box-shadow': 'none'});
+            }
+        });</script>
+
+    <h2>Επικοινωνία</h2>
+    <hr>
+    <div class="first">
+        <p>Μπορείτε να επικοινωνήσετε με το Φροντιστήριο Μαθητοδρόμιο με τους παρακάτω τρόπους.</p>
+        <p style="font-size:20px;"><b>Τηλεφωνικά</b></p>
+        <ul style="list-style-type:none;">
+            <li>
+                <p>Τηλέφωνο Φροντιστηρίου: <a href="tel:2321098048"
+                                              style="text-decoration: none; color:black; font-size:18px;"><b>23210
+                    &nbsp;98 048</b></a></p>
+
+            </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p style="font-size:20px;"><b>Με e-mail</b></p>
+        <ul style="list-style-type:none;">
+            <li>
+                <p><a href="mailto:info@mathitodromio.gr" style="text-decoration: none; color:black; font-size:18px;">info@mathitodromio.gr</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <p>&nbsp;</p>
+    <hr>
+    <div class="first">
+        <p style="font-size:20px; margin-top:30px;"><b>Ταχυδρομικά</b></p>
+        <ul style="list-style-type:none;">
+            <li>
+                <p>Στη διεύθυνση: </p>
+            </li>
+
+            <li>
+                <ul style="list-style-type:none;">
+                    <li><i>Φροντιστήριο Μαθητοδρόμιο</i></li>
+                    <li><i>Βασιλέως Βασιλείου 7</i></li>
+                    <li><i>62121 Σέρρες</i></li>
+                </ul>
+            </li>
+
+        </ul>
+        <p>&nbsp;</p>
+    </div>
+    <hr>
+
+    <div class="first">
+
+        <p style="font-size:20px; margin-top:30px;">Βρείτε μας εδώ: </p>
+        <!--The div element for the map -->
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe style="margin: 0 0 0 0;border: 0;overflow: hidden;"
+                        width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=%CE%92%CE%B1%CF%83%CE%B9%CE%BB%CE%AD%CF%89%CF%82%20%CE%92%CE%B1%CF%83%CE%B9%CE%BB%CE%B5%CE%AF%CE%BF%CF%85%207&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                ></iframe>
+                <a href="https://www.whatismyip-address.com"></a></div>
+
+        </div>
+    </div>
+
+
+</main>
+
+
+<footer>
+    <div class="foot">
+        <h5>Φροντιστήριο Μαθητοδρόμιο | Created by Sokratis Athanasiadis | 2020</h5>
+    </div>
+</footer>
+</body>
+</html>

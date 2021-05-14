@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Εκδηλώσεις</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div class="profile-pic">
+        <img src="images/mathitodromio-profile.png" alt="profile-picture">
+    </div>
+    <div class="navigation-bar">
+        <a href="index.html">
+            <button style="cursor: pointer" class="nav-buttons">Αρχική Σελίδα</button>
+        </a>
+
+        <div class="dropdown">
+            <button class="nav-buttons">Πρόγραμμα</button>
+            <div class="dropdown-content">
+                <a href="#">Πρόγραμμα Φροντιστηρίου</a>
+                <a href="#">Μαθήματα και ώρες/εβδομάδα</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons-active">Φροντιστήριο</button>
+            <div class="dropdown-content">
+                <a href="frontistirio.html">Ποιοι είμαστε</a>
+                <a href="#">Επιτυχόντες</a>
+                <a href="ekdiloseis.html">Εκδηλώσεις</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons">Για Μαθητές</button>
+            <div class="dropdown-content">
+                <a href="usefulLinks.html">Χρήσιμοι Σύνδεσμοι</a>
+                <a href="#">Θέματα Πανελληνίων</a>
+                <a href="moria.html">Υπολογισμός Μορίων</a>
+            </div>
+        </div>
+        <a href="#anakoinwseis">
+            <button style="cursor: pointer;" class="nav-buttons">Ανακοινώσεις</button>
+        </a>
+
+        <a href="contact.html">
+            <button style="cursor: pointer" class="nav-buttons">Επικοινωνία</button>
+        </a>
+    </div>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(window).on("scroll", function () {
+            let $el = $('.navigation-bar');
+            let isPositionFixed = ($el.css('position') === 'fixed');
+            if ($(this).scrollTop() > 120 && !isPositionFixed) {
+                $el.css({'position': 'fixed', 'top': '0px', 'box-shadow': '0 8px 16px 0 rgba(0,0,0,0.8)'});
+            }
+            if ($(this).scrollTop() < 120 && isPositionFixed) {
+                $el.css({'position': 'absolute', 'top': '100px', 'box-shadow': 'none'});
+            }
+        });</script>
+
+    <h2>Εκδηλώσεις</h2>
+    <hr>
+    <div class="first">
+    <ul id="nextTo" style="list-style-type:none;">
+        <li class="zoomLi">
+            <p>
+                Ημερίδα Επαγγελματικού Προσανατολισμού <br>
+                Σάββατο, 2 Φεβρουαρίου 2019
+            </p>
+            <a href="ekdilosi1.html"><img class="zoom"  src="images/ekdiloseis/ekdilosi1/profile.jpg" alt="Εικόνα Εκδήλωσης Ημερίδα Επαγγελματικού Προσανατολισμού Σάββατο, 2 Φεβρουαρίου 2019"></a>
+        </li>
+        <li class="zoomLi">
+            <p>
+                Άγχος Διατροφή & Πανελλήνιες Εξετάσεις <br>
+                Κυριακή, 31 Μαρτίου 2019
+            </p>
+            <img class="zoom"  src="images/ekdiloseis/ekdilosi2/profile.jpg" alt="Εικόνα Εκδήλωσης Άγχος Διατροφή & Πανελλήνιες Εξετάσεις Κυριακή, 31 Μαρτίου 2019">
+        </li>
+    </ul>
+    </div>
+
+</main>
+
+
+<footer>
+    <div class="foot">
+        <h5>Φροντιστήριο Μαθητοδρόμιο | Created by Sokratis Athanasiadis | 2020</h5>
+    </div>
+</footer>
+</body>
+</html>

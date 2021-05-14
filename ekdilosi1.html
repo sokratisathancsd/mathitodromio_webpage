@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Ημερίδα Επαγγελματικού Προσανατολισμού 2019</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div class="profile-pic">
+        <img src="images/mathitodromio-profile.png" alt="profile-picture">
+    </div>
+    <div class="navigation-bar">
+        <a href="index.html">
+            <button style="cursor: pointer" class="nav-buttons">Αρχική Σελίδα</button>
+        </a>
+
+        <div class="dropdown">
+            <button class="nav-buttons">Πρόγραμμα</button>
+            <div class="dropdown-content">
+                <a href="#">Πρόγραμμα Φροντιστηρίου</a>
+                <a href="#">Μαθήματα και ώρες/εβδομάδα</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons-active">Φροντιστήριο</button>
+            <div class="dropdown-content">
+                <a href="frontistirio.html">Ποιοι είμαστε</a>
+                <a href="#">Επιτυχόντες</a>
+                <a href="ekdiloseis.html">Εκδηλώσεις</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="nav-buttons">Για Μαθητές</button>
+            <div class="dropdown-content">
+                <a href="usefulLinks.html">Χρήσιμοι Σύνδεσμοι</a>
+                <a href="#">Θέματα Πανελληνίων</a>
+                <a href="moria.html">Υπολογισμός Μορίων</a>
+            </div>
+        </div>
+        <a href="#anakoinwseis">
+            <button style="cursor: pointer;" class="nav-buttons">Ανακοινώσεις</button>
+        </a>
+
+        <a href="contact.html">
+            <button style="cursor: pointer" class="nav-buttons">Επικοινωνία</button>
+        </a>
+    </div>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(window).on("scroll", function () {
+            let $el = $('.navigation-bar');
+            let isPositionFixed = ($el.css('position') === 'fixed');
+            if ($(this).scrollTop() > 120 && !isPositionFixed) {
+                $el.css({'position': 'fixed', 'top': '0px', 'box-shadow': '0 8px 16px 0 rgba(0,0,0,0.8)'});
+            }
+            if ($(this).scrollTop() < 120 && isPositionFixed) {
+                $el.css({'position': 'absolute', 'top': '100px', 'box-shadow': 'none'});
+            }
+        });</script>
+
+    <h2>Ημερίδα Επαγγελματικού Προσανατολισμού 2019</h2>
+    <hr>
+    <div class="first">
+        <ul style="list-style-type:none;">
+            <li>
+                <p style="margin-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </li>
+        </ul>
+        <ul id="album">
+            <li>
+                <span>Lorem ipsum</span>
+                <img src='images/ekdiloseis/ekdilosi1/ekd1.jpg' alt="εικόνα απο την εκδήλωση"/></li>
+
+            <li>
+                <span>Lorem ipsum</span>
+                <img src='images/ekdiloseis/ekdilosi1/ekd2.jpg' alt="εικόνα απο την εκδήλωση"/></li>
+
+            <li>
+                <span>Lorem ipsum</span>
+                <img src='images/ekdiloseis/ekdilosi1/ekd3.jpg' alt="εικόνα απο την εκδήλωση"/></li>
+
+            <li>
+                <span>Lorem ipsum</span>
+                <img src='images/ekdiloseis/ekdilosi1/ekd4.jpg' alt="εικόνα απο την εκδήλωση"/>
+            </li>
+
+            <li>
+                <span>Lorem ipsum</span>
+                <img src='images/ekdiloseis/ekdilosi1/ekd5.jpg' alt="εικόνα απο την εκδήλωση"/>
+            </li>
+        </ul>
+    </div>
+
+</main>
+
+
+<footer>
+    <div class="foot">
+        <h5>Φροντιστήριο Μαθητοδρόμιο | Created by Sokratis Athanasiadis | 2020</h5>
+    </div>
+</footer>
+</body>
+</html>
